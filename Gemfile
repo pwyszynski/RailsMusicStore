@@ -25,6 +25,17 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'mongoid', '~> 4', github: 'mongoid/mongoid'
 gem 'bson_ext'
 
+# Other gems:
+gem 'rspec-rails', :group => [:development, :test]
+gem 'capybara', :group => :test
+gem 'database_cleaner', :group => :test
+gem 'mongoid-rspec', :group => :test
+gem 'email_spec', :group => :test
+gem 'cucumber-rails', :group => :test, :require => false
+gem 'launchy', :group => :test
+gem 'factory_girl_rails', :group => [:development, :test]
+gem 'devise'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
