@@ -13,44 +13,22 @@
   </head>
 
   <body>
-	  <nav class="top-bar" data-topbar role="navigation">
-		  <ul class="title-area">
-		    <li class="name">
-		      <h1><%= link_to "Home", root_path %></h1>
-		    </li>
-		     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-		    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-		  </ul>
-
-	  <section class="top-bar-section">
-	    <!-- Right Nav Section -->
-	    <ul class="right">
-	      <li class="has-dropdown">
-	        <a href="#">Account</a>
-	        <ul class="dropdown">
-	          <%= render 'shared/navigation' %>
-	        </ul>
-	      </li>
-	    </ul>
-
-	    <!-- Left Nav Section -->
-	    <ul class="left">
-	      <li><%= link_to "Browse music", "musiccds"%></li>
-	    </ul>
-	  </section>
-	</nav>
- <!--  <ul class="hmenu">
-    <%= render 'shared/navigation' %>
-  </ul> -->
-  <% flash.each do |name, msg| %>
-    <% if msg.is_a?(String) %>
-      <%= content_tag :div, msg, :id => "flash_#{name}" %>
-    <% end %>
-  <% end %>
-  	<div class="row">
-  		<div class="large-10 small-offset-1 columns">
-	    	<%= yield %>
-	    </div>
+ 
+  <%= render "layouts/header" %>
+ 
+  <%= render "layouts/alerts" %>
+ 
+  <div id="main-content" class="row full-min-height">
+    <%= yield %>
+  </div>
+ 
+  <footer class="row">
+    <div class="large-12 columns">
+      <hr> <p>© MusicStore 2014</p>
     </div>
+  </footer>
+ 
+  <%= javascript_include_tag "application" %>
+
   </body>
 </html>

@@ -1,34 +1,18 @@
 <p id="notice"><%= notice %></p>
+<div class="large-3 small-12 column">
+  <%=image_tag @musiccd.cover_url%>
+</div>
+ 
+<div class="large-9 small-12 column">
+  <h3>
+    <%= @musiccd.title %>
+    (<%= @musiccd.release_year %>)
+  </h3>
+  <p class="label movie-label radius mb1">$ <%= @musiccd.price %></p>
+ 
+  <p><%= @musiccd.description %></p>
+</div>
 
-<p>
-  <strong>Title:</strong>
-  <%= @musiccd.title %>
-</p>
-
-<p>
-  <strong>Author:</strong>
-  <%= @musiccd.author %>
-</p>
-
-<p>
-  <strong>Release year:</strong>
-  <%= @musiccd.release_year %>
-</p>
-
-<p>
-  <strong>Price:</strong>
-  <%= @musiccd.price %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @musiccd.description %>
-</p>
-
-<p>
-  <strong>Cover url:</strong>
-  <%= @musiccd.cover_url %>
-</p>
 
 <%= link_to 'Edit', edit_musiccd_path(@musiccd) %> |
 <%= link_to 'Back', musiccds_path %>

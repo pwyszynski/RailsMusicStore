@@ -35,3 +35,23 @@
 <br>
 
 <%= link_to 'New Musiccd', new_musiccd_path %>
+
+<div class="column">
+  <ul class="movies-grid no-bullet row">
+    <% @musiccds.each do |musiccd| %>
+      <li class="large-3 medium-4 small-12 column">
+        <div class="movie-card padly">
+          <%= link_to musiccd, class: "poster" do %>
+            <%= image_tag musiccd.cover_url %>
+          <% end %>
+          <div class="movie-info ell glassy-bg padmy padlx">
+            <div class="title">
+              <h6><%= musiccd.title %> <span>(<%= musiccd.release_year %>)</span></h6>
+            </div>
+            <p class="left price label movie-label radius">$ <%= musiccd.price %></p>
+          </div>
+        </div>
+      </li>
+    <% end %>
+  </ul>
+</div>

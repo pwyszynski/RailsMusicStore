@@ -37,6 +37,10 @@ gem 'factory_girl_rails', :group => [:development, :test]
 gem 'devise'
 gem 'protected_attributes'
 
+# Shopping cart functionality
+gem 'redis'
+gem 'hiredis'
+
 # Sass
 gem 'foundation-rails'
 

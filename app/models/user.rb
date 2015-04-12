@@ -25,7 +25,7 @@ class User
 
   field :name
   validates_presence_of :name
-  validates_uniqueness_of :name, :email, :case_sensitive => false
+  validates_uniqueness_of :email, :case_sensitive => false
   ## Confirmable
   # field :confirmation_token,   type: String
   # field :confirmed_at,         type: Time
