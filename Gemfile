@@ -35,6 +35,7 @@ gem 'cucumber-rails', :group => :test, :require => false
 gem 'launchy', :group => :test
 gem 'factory_girl_rails', :group => [:development, :test]
 gem 'devise'
+gem 'protected_attributes'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
