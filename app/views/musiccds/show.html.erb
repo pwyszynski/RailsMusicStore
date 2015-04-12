@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @musiccd.title %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @musiccd.author %>
+</p>
+
+<p>
+  <strong>Release year:</strong>
+  <%= @musiccd.release_year %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @musiccd.price %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @musiccd.description %>
+</p>
+
+<p>
+  <strong>Cover url:</strong>
+  <%= @musiccd.cover_url %>
+</p>
+
+<%= link_to 'Edit', edit_musiccd_path(@musiccd) %> |
+<%= link_to 'Back', musiccds_path %>

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :musiccds
   get 'users/show'
 
   root :to => "home#index"

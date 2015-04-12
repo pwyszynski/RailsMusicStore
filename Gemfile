@@ -37,6 +37,9 @@ gem 'factory_girl_rails', :group => [:development, :test]
 gem 'devise'
 gem 'protected_attributes'
 
+# Sass
+gem 'foundation-rails'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
