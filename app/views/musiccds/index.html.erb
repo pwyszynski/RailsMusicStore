@@ -1,40 +1,8 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Musiccds</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Author</th>
-      <th>Release year</th>
-      <th>Price</th>
-      <th>Description</th>
-      <th>Cover url</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @musiccds.each do |musiccd| %>
-      <tr>
-        <td><%= musiccd.title %></td>
-        <td><%= musiccd.author %></td>
-        <td><%= musiccd.release_year %></td>
-        <td><%= musiccd.price %></td>
-        <td><%= musiccd.description %></td>
-        <td><%= musiccd.cover_url %></td>
-        <td><%= link_to 'Show', musiccd %></td>
-        <td><%= link_to 'Edit', edit_musiccd_path(musiccd) %></td>
-        <td><%= link_to 'Destroy', musiccd, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<h1>Browse availiable CDs:</h1>
 
 <br>
-
-<%= link_to 'New Musiccd', new_musiccd_path %>
 
 <div class="column">
   <ul class="movies-grid no-bullet row">
@@ -55,3 +23,5 @@
     <% end %>
   </ul>
 </div>
+
+<%= link_to 'New Musiccd', new_musiccd_path %>
