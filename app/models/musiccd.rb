@@ -6,4 +6,12 @@ class Musiccd
   field :price, type: Float
   field :description, type: String
   field :cover_url, type: String
+
+  def cart_action(current_user_id)
+	  if $redis.sismember "cart#{current_user_id}", id
+	    "Remove from"
+	  else
+	    "Add to"
+	  end
+	end
 end

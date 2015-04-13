@@ -1,10 +1,17 @@
 Rails.application.routes.draw do
+  get 'carts/show'
+
   resources :musiccds
   get 'users/show'
 
   root :to => "home#index"
   devise_for :users
   resources :users
+
+  resource :cart, only: [:show] do
+    put 'add/:musiccd_id', to: 'carts#add', as: :add_to
+    put 'remove/:musiccd_id', to: 'carts#remove', as: :remove_from
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

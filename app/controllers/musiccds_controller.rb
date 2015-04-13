@@ -10,6 +10,8 @@ class MusiccdsController < ApplicationController
   # GET /musiccds/1
   # GET /musiccds/1.json
   def show
+      @musiccd = Musiccd.find(params[:id])
+      @cart_action = @musiccd.cart_action current_user.try :id
   end
 
   # GET /musiccds/new
