@@ -1,1 +1,1 @@
-$redis = Redis.new(:driver => :hiredis)
+$redis = Redis.new(:url => 'redis://asunez:8b8e22ebd3f3a669cddd576999421c50@50.30.35.9:3896', :driver => :hiredis)
