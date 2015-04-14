@@ -3,8 +3,12 @@
 == README
 
 * Ruby version: 2.2.1
+* Rails version: 4.2.1
+
+If database is not working, there may be no connection to remote Database on MongoLabs.com
+If no other pages are working than home, there may be no connection to remote Redis database on RedisLabs.com
 
 This project uses MongoDB
 
 ==CURRENTLY NOT WORKING ON HEROKU
-==TRYING SOMEWHERE ELSE
+==IF ADD TO CART IS NOT WORKING REFRESH PAGE (problems with JavaScript)
