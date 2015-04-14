@@ -1,1 +1,1 @@
-$redis = Redis.new(:url => 'redis://asunez:8b8e22ebd3f3a669cddd576999421c50@50.30.35.9:3896', :driver => :hiredis)
+$redis = Redis.new(:host => 'pub-redis-10335.us-east-1-3.3.ec2.garantiadata.com', :port => 10335, :driver => :hiredis)
