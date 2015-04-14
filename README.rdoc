@@ -8,6 +8,8 @@
 If database is not working, there may be no connection to remote Database on MongoLabs.com
 If no other pages are working than home, there may be no connection to remote Redis database on RedisLabs.com
 
+I still have problems with pushing some assets remotely.
+
 This project uses MongoDB
 
 ==CURRENTLY NOT WORKING ON HEROKU
