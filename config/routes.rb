@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :musiccds
   get 'users/show'
 
-  root :to => "musiccds#index"
+  root :to => "home#index"
   devise_for :users
   resources :users
 
