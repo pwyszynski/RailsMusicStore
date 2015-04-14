@@ -51,6 +51,9 @@ gem 'foundation-rails'
 # gem 'unicorn'
 gem 'thin'
 
+# Added for Heroku:
+gem 'rails_12factor', :group => :production
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
