@@ -1,16 +1,23 @@
-=== Simple Music Store
+= Simple Music Store by Przemysław Wyszyński
+{Heroku link to the app}[https://musicstorepw.herokuapp.com/]
 
 == README
 
 * Ruby version: 2.2.1
 * Rails version: 4.2.1
+* Mongoid version: 4.0.2
 
-If database is not working, there may be no connection to remote Database on MongoLabs.com
-If no other pages are working than home, there may be no connection to remote Redis database on RedisLabs.com
+== Sample users:
 
-I still have problems with pushing some assets remotely.
+* user@example.com  - please1234
+* user2@example.com - please1234
 
-This project uses MongoDB
+== TROUBLESHOOTING
 
-==CURRENTLY NOT WORKING ON HEROKU
-==IF ADD TO CART IS NOT WORKING REFRESH PAGE (problems with JavaScript)
+* If database is not working, there may be no connection to remote Database on MongoLabs.com.  
+* If no other pages are working than home, there may be no connection to remote Redis database on RedisLabs.com.  
+* I still have problems with pushing some assets remotely.
+
+This project uses MongoDB as main DB and Redis as supportive DB for storing cart contents.
+
+===== IF ADD TO CART IS NOT WORKING REFRESH PAGE (problems with JavaScript and Turbolinks)
